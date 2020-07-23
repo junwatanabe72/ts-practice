@@ -1,7 +1,7 @@
 import React from "react";
 import {useDispatch, useSelector} from "react-redux";
-import{ RootState } from "../store";
-import { incrementAction, decrementAction, resetAction } from "../store/counter/actions";
+import{ RootState } from "../../store";
+import { incrementAction, decrementAction, resetAction } from "../../store/counter/actions";
 import Button from "./Button";
 
 export const Counter: React.FC = () =>{

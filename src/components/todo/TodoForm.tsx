@@ -1,8 +1,8 @@
 import React,{ useCallback, useRef,useState } from "react";
 import { useDispatch , useSelector } from "react-redux";
 
-import { RootState } from "../store";
-import { addTodoAction, deleteTodoAction } from "../store/todo/actions";
+import { RootState } from "../../store";
+import { addTodoAction, deleteTodoAction } from "../../store/todo/actions";
 import { TodoListItem } from "./TodoListItem";
 
 
@@ -30,7 +30,7 @@ export const TodoForm: React.FC = () =>{
   return(
     <>
       <h1>TODO</h1>
-      <input ref={inputForm} onChange={handleInput}></input>
+      <input ref={inputForm} onChange={handleInput}/>
       <button onClick={handleAdd}>ADD</button>
       <ul>
         {todoList.map(item=>(

@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import{ Provider } from "react-redux";
 import App from './App';
-import {Counter} from "./components/Counter";
-import { TodoForm } from "./components/TodoForm";
+import {Counter} from "./components/counter/Counter";
+import { TodoForm } from "./components/todo/TodoForm";
+import Game  from "./components/tic-tac-toe/Game";
 import store from './store';
 import * as serviceWorker from './serviceWorker';
 
@@ -14,6 +15,7 @@ ReactDOM.render(
       <Counter />
       <TodoForm />
     </Provider>
+    <Game />
   </React.StrictMode>,
   document.getElementById('root')
 );
