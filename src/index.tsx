@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import{ Provider } from "react-redux";
 import App from './App';
 import {Counter} from "./components/Counter";
+import { TodoForm } from "./components/TodoForm";
 import store from './store';
 import * as serviceWorker from './serviceWorker';
 
@@ -11,6 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Counter />
+      <TodoForm />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
